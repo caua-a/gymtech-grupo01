@@ -14,7 +14,7 @@
     --color-primary: #901E3E;
     --color-primary-hover: #6d1630;
 
-    --color-secondary: #2F2D2E;
+    --color-secondary: #1f1f1f;
     --color-tertiary: #605B51;
     --color-complementary: #454040;
 
@@ -40,7 +40,7 @@
 
 body{
     font-family: "Poppins", sans-serif;
-    background-color: var(--color-light);
+    background-color: var(--color-primary);
     color: var(--text-main);
     overflow-x: hidden;
 }
@@ -57,9 +57,12 @@ body{
     width: 100%;
     z-index: 999;
 }
+.header__nav img{
+    width: 200px;
+}
 
 .navbar-brand{
-    color: var(--text-light) !important;
+    color: var(--text-light);
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
@@ -76,39 +79,21 @@ body{
     position: relative;
 }
 
-.nav-link::after{
-    content: "";
 
-    width: 0%;
-    height: 2px;
 
-    background-color: var(--color-primary);
-
-    position: absolute;
-    bottom: -4px;
-    left: 0;
-
-    transition: var(--transition);
-}
-
-.nav-link:hover::after{
-    width: 100%;
-}
 
 .nav-link:hover{
-    color: var(--color-primary) !important;
+    color: var(--color-primary) ;
 }
 
 /* HERO */
 
-.main__hero{
+.main__hero {
     width: 100%;
     height: 100vh;
 
-    background:
-    linear-gradient(rgba(0,0,0,.75),
-    rgba(0,0,0,.75)),
-    url("https://images.pexels.com/photos/1552242/pexels-photo-1552242.jpeg");
+    background: black;
+
 
     background-size: cover;
     background-position: center;
@@ -118,22 +103,23 @@ body{
     align-items: center;
 
     padding: 0 30px;
+    color: white;
+    flex-direction: column;
 }
 
-.main__hero::before{
-
-    color: var(--text-light);
-
-    font-size: 5rem;
-    font-weight: 800;
-    text-align: center;
-
-    max-width: 900px;
-
-    line-height: 1.1;
-
-    text-shadow: 0px 5px 20px rgba(0,0,0,.4);
+.main__hero content a{
+    background-color: #901E3E;
+    text-decoration: none;
+    color: white;
+    width: 10%;
+    height: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.3rem;
+    border-radius: 10px;
 }
+
 
 /* CAROUSEL */
 
@@ -294,21 +280,6 @@ body{
     padding: 0 20px;
 }
 
-.main__treinos::before{
-    content: "TREINE COMO NUNCA ANTES";
-
-    color: var(--text-light);
-
-    font-size: 4rem;
-    font-weight: 800;
-
-    text-align: center;
-
-    max-width: 800px;
-
-    line-height: 1.2;
-}
-
 /* GALERIA */
 
 .main__galeria{
@@ -335,19 +306,6 @@ body{
     padding: 0 20px;
 }
 
-.main__matricula::before{
-    content: "COMECE SUA TRANSFORMAÇÃO HOJE";
-
-    color: var(--text-light);
-
-    font-size: 3.5rem;
-    font-weight: 800;
-
-    max-width: 900px;
-
-    line-height: 1.2;
-}
-
 /* FOOTER */
 
 footer{
@@ -366,75 +324,30 @@ footer section{
     color: var(--text-light);
 }
 
-/*RESPONSIVIDADE */
 
-@media screen and (max-width: 1200px){
 
-    .main__cards-planos{
-        flex-wrap: wrap;
-    }
+.main__galeria-container{
 
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    
 }
 
-@media screen and (max-width: 992px){
-
-    .header__nav{
-        padding: 15px 25px;
-    }
-
-    .main__hero::before{
-        font-size: 3.5rem;
-    }
-
-    .main__carrosel,
-    .main__loc,
-    .main__cards-planos,
-    .main__galeria{
-        padding: 80px 30px;
-    }
-
-    .carousel-item img{
-        height: 450px;
-    }
-
-    .main__treinos::before{
-        font-size: 2.8rem;
-    }
-
-    .main__matricula::before{
-        font-size: 2.5rem;
-    }
-
+.galeria-container__images{
+    display: flex;
+    align-items: center;
+    
+}
+.text-center img{
+    width: 100%;
+    justify-self: center;
+    align-self: center;
+    transition: ease-in-out 0.2s;
+    box-shadow: transparent 1px 1px 20px;
 }
 
-@media screen and (max-width: 576px){
-
-    .main__hero::before{
-        font-size: 2.3rem;
-    }
-
-    .carousel-item img{
-        height: 280px;
-    }
-
-    .main__treinos{
-        height: 350px;
-    }
-
-    .main__treinos::before{
-        font-size: 2rem;
-    }
-
-    .main__matricula{
-        height: 300px;
-    }
-
-    .main__matricula::before{
-        font-size: 1.8rem;
-    }
-
-    footer{
-        flex-direction: column;
-    }
-
+.text-center img:hover{
+    box-shadow: var(--color-primary) 1px 1px 20px;
+    cursor: pointer;
 }
