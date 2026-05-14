@@ -10,13 +10,15 @@
     integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
     crossorigin="anonymous"></script>
 
-  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
 
-  <script src="./assets/js/script.js" defer></script>
+  
+
+  <script src="./js/script.js" defer></script>
   <title>GymTech</title>
 </head>
 
@@ -35,10 +37,10 @@
               <a class="nav-link active" aria-current="page" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#main__treinos">Treinos</a>
+              <a class="nav-link" href="#main__loc">Localização</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#main__loc">Localização</a>
+              <a class="nav-link" href="#main__treinos">Treinos</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -51,12 +53,11 @@
   </header>
   <main>
 
-    <!-- SECTION CARDS-PLANOS -->
 
     <section class="main__hero">
       <div class="main__content">
-        <h1>Viva uma nova experiencia com a nossa academia</h1>
-        <a href="#main__treinos" type="button">Saiba mais</a>
+        <h1>VIVA UMA NOVA EXPERIÊNCIA EM NOSSA ACADEMIA</h1>
+        <a class="fs-4" href="#main__treinos" type="button">SAIBA MAIS</a>
       </div>
 
 
@@ -244,7 +245,7 @@
         <img src="https://images.pexels.com/photos/13588102/pexels-photo-13588102.jpeg" class="card-img-top"
           alt="Plano Premium">
         <div class="card-body">
-          <div class="planos-content" <h5 class="card-title">Premium</h5>
+          <div class="planos-content"> <h5 class="card-title">Premium</h5>
             <p class="card-text">
               Para quem busca evolução completa.<br>
               ✔ Musculação + aulas coletivas<br>
@@ -278,7 +279,6 @@
     </section>
 
     <!-- SECTION TREINOS -->
-    <!-- SECTION TREINOS -->
 <section id="main__treinos" class="main__treinos">
   <h1 class="fs-1">O TREINO QUE VOCÊ PRECISA, <span>AQUI TEM!</span></h1>
 
@@ -286,58 +286,59 @@
 
     <div class="card text-bg-dark col-3 treinos-card">
       <img src="https://images.pexels.com/photos/13885345/pexels-photo-13885345.jpeg" class="card-img" alt="Musculação">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Musculação Completa</h5>
-        <p class="card-text">
+      <div class="card-img-overlay" style="background: rgba(0,0,0,0.45);">
+        <h5 class="card-title text-red">Musculação Completa</h5>
+        <p class="card-text text-white">
           • Musculação completa<br>
           • Treinamento funcional<br>
           • Avaliação física
         </p>
-        <p class="card-text"><small>Treinos focados em força e evolução</small></p>
+        <p class="card-text"><small class="text-white-50">Treinos focados em força e evolução</small></p>
       </div>
     </div>
 
     <div class="card text-bg-dark col-3 treinos-card">
       <img src="https://images.pexels.com/photos/13947314/pexels-photo-13947314.jpeg" class="card-img" alt="Funcional">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Treino Funcional</h5>
-        <p class="card-text">
+      <div class="card-img-overlay" style="background: rgba(0,0,0,0.45);">
+        <h5 class="card-title text-red">Treino Funcional</h5>
+        <p class="card-text text-white">
           • Treinamento funcional<br>
           • Cardio e emagrecimento<br>
           • Treinos personalizados
         </p>
-        <p class="card-text"><small>Movimento, energia e desempenho</small></p>
+        <p class="card-text"><small class="text-white-50">Movimento, energia e desempenho</small></p>
       </div>
     </div>
 
     <div class="card text-bg-dark col-3 treinos-card">
       <img src="https://images.pexels.com/photos/13896897/pexels-photo-13896897.jpeg" class="card-img" alt="Cardio">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Cardio & Saúde</h5>
-        <p class="card-text">
+      <div class="card-img-overlay" style="background: rgba(0,0,0,0.45);">
+        <h5 class="card-title text-red">Cardio & Saúde</h5>
+        <p class="card-text text-white">
           • Cardio e emagrecimento<br>
           • Ambiente climatizado e moderno<br>
           • Suporte da equipe
         </p>
-        <p class="card-text"><small>Foco em saúde e condicionamento</small></p>
+        <p class="card-text"><small class="text-white-50">Foco em saúde e condicionamento</small></p>
       </div>
     </div>
 
     <div class="card text-bg-dark col-3 treinos-card">
       <img src="https://images.pexels.com/photos/36400005/pexels-photo-36400005.jpeg" class="card-img" alt="Aulas">
-      <div class="card-img-overlay">
-        <h5 class="card-title">Aulas Coletivas</h5>
-        <p class="card-text">
+      <div class="card-img-overlay" style="background: rgba(0,0,0,0.45);">
+        <h5 class="card-title text-red">Aulas Coletivas</h5>
+        <p class="card-text text-white">
           • Aulas coletivas<br>
           • Tech-Dance com professores profissionais<br>
           • Personal trainers qualificados
         </p>
-        <p class="card-text"><small>Energia em grupo e motivação total</small></p>
+        <p class="card-text"><small class="text-white-50">Energia em grupo e motivação total</small></p>
       </div>
     </div>
 
   </div>
 </section>
+
 
     <!-- SECTION GALERIA -->
     <section id="main__galeria" class="main__galeria my-5">
@@ -405,7 +406,7 @@
 
 
       <label for="inputCPF" class="form-label">CPF</label>
-      <input type="text" id="inputCPF" class="form-control" aria-describedby="cpfHelpBlock" maxlength="11" inputmode="numeric" pattern="[0-9]*">
+      <input type="text" id="inputCPF" class="form-control" aria-describedby="cpfHelpBlock" maxlength="11">
 
 
       <label for="inputEmail" class="form-label">E-mail</label>
@@ -416,7 +417,7 @@
       <input type="password" id="inputSenha" class="form-control" aria-describedby="senhaHelpBlock">
 
 
-      <select class="form-select" aria-label="Selecionar plano">
+      <select id="plano" class="form-select" aria-label="Selecionar plano">
         <option selected>Selecione um plano</option>
         <option value="1">Básico</option>
         <option value="2">Premium</option>
@@ -448,31 +449,19 @@
     <div class="social-icons">
 
       <a href="#">
-        <i class="fa-brands fa-facebook-f"></i>
+        <i class="bi bi-facebook"></i>
       </a>
 
       <a href="#">
-        <i class="fa-brands fa-instagram"></i>
+        <i class="bi bi-instagram"></i>
       </a>
 
       <a href="#">
-        <i class="fa-brands fa-youtube"></i>
+        <i class="bi bi-youtube"></i>
       </a>
 
       <a href="#">
-        <i class="fa-brands fa-tiktok"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-spotify"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-twitter"></i>
-      </a>
-
-      <a href="#">
-        <i class="fa-brands fa-whatsapp"></i>
+        <i class="bi bi-whatsapp"></i>
       </a>
 
     </div>
