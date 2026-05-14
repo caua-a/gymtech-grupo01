@@ -2,365 +2,438 @@
 <html lang="pt-br">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="./assets/css/style.css">
-
-    <title>GymTech</title>
+  <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <title>GymTech</title>
 </head>
 
 <body>
-    <header>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary header__nav">
-            <div class="container-fluid">
-                <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Início</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Treinos</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Localização</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link disabled" aria-disabled="true">Disabled</a>
-                        </li>
-                    </ul>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary header__nav">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img src="assets/img/logo.png" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+          aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Treinos</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Localização</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link disabled" aria-disabled="true">Disabled</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+  </header>
+  <main>
+
+    <!-- SECTION CARDS-PLANOS -->
+
+    <section class="main__hero">
+      <div class="main__content">
+        <h1>Viva uma nova experiencia com a nossa academia</h1>
+        <a href="#main__treinos" type="button">Saiba mais</a>
+      </div>
+
+
+
+    </section>
+    <!-- livre -->
+    <!-- livre -->
+
+    <!-- SECTION CARROSSEL -->
+
+    <section id="main_carrosel" class="main__carrosel">
+      <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="5000">
+            <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg" class="d-block w-100"
+              alt="...">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="https://images.pexels.com/photos/13896071/pexels-photo-13896071.jpeg" class="d-block w-100"
+              alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.pexels.com/photos/13211514/pexels-photo-13211514.jpeg" class="d-block w-100"
+              alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+          data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+
+      <!-- SECTION LOC -->
+
+    </section>
+
+    <section id="main__loc" class="py-5 bg-light">
+      <div class="container">
+
+        <div class="text-center mb-5">
+          <h2 class="fw-bold">Nossas Unidades</h2>
+          <p class="text-muted">Encontre a academia mais perto de você</p>
+        </div>
+
+        <div class="row g-4">
+
+          <!-- CARD -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100 location-card">
+
+              <div class="position-relative">
+                <img src="https://images.pexels.com/photos/6046978/pexels-photo-6046978.png" class="card-img-top"
+                  alt="Unidade">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Maurício Galli</h5>
+                <p class="text-muted small mb-3">
+                  Rua Maurício Galli, 555 - Vila Sedenho, Araraquara - SP
+                </p>
+
+                <div class="mt-auto">
+                  <button class="btn w-100 btn-danger">
+                    Ver unidade
+                  </button>
                 </div>
+              </div>
+
             </div>
-        </nav>
-
-    </header>
-    <main>
-
-        <!-- SECTION CARDS-PLANOS -->
-
-        <section class="main__hero">
-            <div class="main__content">
-                <h1>Viva uma nova experiencia com a nossa academia</h1>
-                <a href="#main__treinos" type="button">Saiba mais</a>
-            </div>
-        </section>
-        <!-- livre -->
-        <!-- livre -->
-
-        <!-- SECTION CARROSSEL -->
-
-        <section id="main_carrosel" class="main__carrosel">
-            <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active" data-bs-interval="5000">
-                        <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item" data-bs-interval="2000">
-                        <img src="https://images.pexels.com/photos/13896071/pexels-photo-13896071.jpeg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="https://images.pexels.com/photos/13211514/pexels-photo-13211514.jpeg"
-                            class="d-block w-100" alt="...">
-                    </div>
-                </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
-            </div>
-
-
-            <!-- SECTION LOC -->
-
-        </section>
-
-   <section id="main__loc" class="py-5 bg-light">
-  <div class="container">
-
-    <div class="text-center mb-5">
-      <h2 class="fw-bold">Nossas Unidades</h2>
-      <p class="text-muted">Encontre a academia mais perto de você</p>
-    </div>
-
-    <div class="row g-4">
-
-      <!-- CARD -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card border-0 shadow-sm h-100 location-card">
-
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Unidade">
-            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
           </div>
 
-          <div class="card-body d-flex flex-column">
-            <h5 class="fw-bold">Maurício Galli</h5>
-            <p class="text-muted small mb-3">
-              Rua Maurício Galli, 555 - Vila Sedenho, Araraquara - SP
-            </p>
+          <!-- CARD -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100 location-card">
 
-            <div class="mt-auto">
-              <button class="btn btn-danger w-100">
-                Ver unidade
-              </button>
+              <div class="position-relative">
+                <img src="https://images.pexels.com/photos/7031706/pexels-photo-7031706.jpeg" class="card-img-top"
+                  alt="Unidade">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Av. Trinta e Seis</h5>
+                <p class="text-muted small mb-3">
+                  Av. Padre Francisco Salles Culturato, 924 - Araraquara - SP
+                </p>
+
+                <div class="mt-auto">
+                  <button class="btn btn-danger w-100">
+                    Ver unidade
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100 location-card">
+
+              <div class="position-relative">
+                <img src="https://images.pexels.com/photos/4944435/pexels-photo-4944435.jpeg" class="card-img-top"
+                  alt="Unidade">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">São Carlos</h5>
+                <p class="text-muted small mb-3">
+                  Av. Francisco Pereira Lopes, 1701 - Jardim Bandeirantes, São Carlos - SP
+                </p>
+
+                <div class="mt-auto">
+                  <button class="btn btn-danger w-100">
+                    Ver unidade
+                  </button>
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+          <!-- CARD -->
+          <div class="col-12 col-md-6 col-lg-3">
+            <div class="card border-0 shadow-sm h-100 location-card">
+
+              <div class="position-relative">
+                <img src="https://images.pexels.com/photos/6046978/pexels-photo-6046978.png" class="card-img-top"
+                  alt="Unidade">
+                <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
+              </div>
+
+              <div class="card-body d-flex flex-column">
+                <h5 class="fw-bold">Jaú</h5>
+                <p class="text-muted small mb-3">
+                  Rua Antônio Prado Lyra, 395 - Jardim Alvorada, Jaú - SP
+                </p>
+
+                <div class="mt-auto">
+                  <button class="btn btn-danger w-100">
+                    Ver unidade
+                  </button>
+                </div>
+              </div>
+
             </div>
           </div>
 
         </div>
       </div>
+    </section>
 
-      <!-- CARD -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card border-0 shadow-sm h-100 location-card">
+    <!-- SECTION CARDS-PLANOS -->
 
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Unidade">
-            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
+    <section id="main__cards-planos" class="main__cards-planos">
+
+      <div class="card col-4" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="Plano Basic">
+        <div class="card-body">
+          <h5 class="card-title">Basic</h5>
+          <p class="card-text">
+            Ideal para quem quer começar.<br>
+            ✔ Musculação liberada<br>
+            ✔ Acesso à sala de treino<br>
+            ✔ Suporte básico da equipe
+          </p>
+          <p class="fw-bold">R$ 99,90 / mês</p>
+          <a href="#" class="btn btn-primary">Assinar plano</a>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="Plano Premium">
+        <div class="card-body">
+          <h5 class="card-title">Premium</h5>
+          <p class="card-text">
+            Para quem busca evolução completa.<br>
+            ✔ Musculação + aulas coletivas<br>
+            ✔ Todas as modalidades liberadas<br>
+            ✔ Acesso completo à academia
+          </p>
+          <p class="fw-bold">R$ 129,90 / mês</p>
+          <a href="#" class="btn btn-primary">Assinar plano</a>
+        </div>
+      </div>
+
+      <div class="card col-4" style="width: 18rem;">
+        <img src="" class="card-img-top" alt="Plano VIP">
+        <div class="card-body">
+          <h5 class="card-title">VIP</h5>
+          <p class="card-text">
+            Experiência completa e personalizada.<br>
+            ✔ Personal trainer incluso<br>
+            ✔ Treino individualizado<br>
+            ✔ Acesso total + prioridade nos serviços
+          </p>
+          <p class="fw-bold">R$ 159,90 / mês</p>
+          <a href="#" class="btn btn-primary">Assinar plano</a>
+        </div>
+      </div>
+
+    </section>
+
+    <!-- SECTION TREINOS -->
+    <section id="main__treinos" class="main__treinos">
+      <h1>O TREINO QUE VOCÊ PRECISA, <span>AQUI TEM!</span></h1>
+      <div class="main__treinos-cards container row">
+        <div class="card text-bg-dark col-3 treinos-card">
+          <img
+            src="https://images.pexels.com/photos/13885345/pexels-photo-13885345.jpeg?_gl=1*16xrlgu*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3MTMkajQ2JGwwJGgw"
+            class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card text-bg-dark col-3 treinos-card">
+          <img
+            src="https://images.pexels.com/photos/13947314/pexels-photo-13947314.jpeg?_gl=1*787zig*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NDQkajE1JGwwJGgw"
+            class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card text-bg-dark col-3 treinos-card">
+          <img
+            src="https://images.pexels.com/photos/13896897/pexels-photo-13896897.jpeg?_gl=1*1nqla91*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NzAkajUwJGwwJGgw"
+            class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+
+        <div class="card text-bg-dark col-3 treinos-card">
+          <img
+            src="https://images.pexels.com/photos/36400005/pexels-photo-36400005.jpeg?_gl=1*1jogapn*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE5MTUkajMwJGwwJGgw"
+            class="card-img" alt="...">
+          <div class="card-img-overlay">
+            <h5 class="card-title">Card title</h5>
+            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
+              additional content. This content is a little bit longer.</p>
+            <p class="card-text"><small>Last updated 3 mins ago</small></p>
+          </div>
+        </div>
+      </div>
+
+
+    </section>
+
+
+    <!-- SECTION GALERIA -->
+    <section id="main__galeria" class="main__galeria my-5">
+      <div class="container text-center main__galeria-container">
+        <div class="row galeria-container__images">
+          <div class="col">
+            <div class="text-center">
+              <img
+                src="https://images.pexels.com/photos/29149075/pexels-photo-29149075.jpeg?_gl=1*hy5faw*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyMTgkajU2JGwwJGgw"
+                class="rounded" alt="...">
+            </div>
           </div>
 
-          <div class="card-body d-flex flex-column">
-            <h5 class="fw-bold">Av. Trinta e Seis</h5>
-            <p class="text-muted small mb-3">
-              Av. Padre Francisco Salles Culturato, 924 - Araraquara - SP
-            </p>
+          <div class="col-6">
+            <div class="text-center">
+              <img
+                src="https://images.pexels.com/photos/29149082/pexels-photo-29149082.jpeg?_gl=1*1w68tsm*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyNDIkajMyJGwwJGgw"
+                class="rounded" alt="...">
+            </div>
+          </div>
 
-            <div class="mt-auto">
-              <button class="btn btn-danger w-100">
-                Ver unidade
-              </button>
+          <div class="col">
+            <div class="text-center">
+              <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg" class="rounded" alt="...">
+            </div>
+          </div>
+        </div>
+
+        <div class="row galeria-container__images">
+          <div class="col">
+            <div class="text-center">
+              <img
+                src="https://images.pexels.com/photos/4716817/pexels-photo-4716817.jpeg?_gl=1*slb12g*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyNzQkajYwJGwwJGgw"
+                class="rounded" alt="...">
+            </div>
+          </div>
+
+          <div class="col-5">
+            <div class="text-center">
+              <img src="https://images.pexels.com/photos/13896071/pexels-photo-13896071.jpeg" class="rounded" alt="...">
+            </div>
+          </div>
+
+          <div class="col">
+            <div class="text-center">
+              <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg" class="rounded" alt="...">
             </div>
           </div>
 
         </div>
       </div>
+    </section>
 
-      <!-- CARD -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card border-0 shadow-sm h-100 location-card">
-
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Unidade">
-            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
-          </div>
-
-          <div class="card-body d-flex flex-column">
-            <h5 class="fw-bold">São Carlos</h5>
-            <p class="text-muted small mb-3">
-              Av. Francisco Pereira Lopes, 1701 - Jardim Bandeirantes, São Carlos - SP
-            </p>
-
-            <div class="mt-auto">
-              <button class="btn btn-danger w-100">
-                Ver unidade
-              </button>
-            </div>
-          </div>
-
-        </div>
+    <section id="main__matricula" class="main__matricula row">
+      <div class="main__matricula-image col-4">
+        <img src="https://images.pexels.com/photos/34791440/pexels-photo-34791440.jpeg" alt="">
       </div>
 
-      <!-- CARD -->
-      <div class="col-12 col-md-6 col-lg-3">
-        <div class="card border-0 shadow-sm h-100 location-card">
+      <div class="main__matricula-form col-8">
+        <form action="">
+          <label for="inputNome" class="form-label">Nome</label>
+          <input type="text" id="inputNome" class="form-control" aria-describedby="nomeHelpBlock">
 
-          <div class="position-relative">
-            <img src="https://via.placeholder.com/600x400" class="card-img-top" alt="Unidade">
-            <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
-          </div>
 
-          <div class="card-body d-flex flex-column">
-            <h5 class="fw-bold">Jaú</h5>
-            <p class="text-muted small mb-3">
-              Rua Antônio Prado Lyra, 395 - Jardim Alvorada, Jaú - SP
-            </p>
+          <label for="inputCPF" class="form-label">CPF</label>
+          <input type="number" id="inputCPF" class="form-control" aria-describedby="cpfHelpBlock">
 
-            <div class="mt-auto">
-              <button class="btn btn-danger w-100">
-                Ver unidade
-              </button>
-            </div>
-          </div>
 
-        </div>
+          <label for="inputEmail" class="form-label">EMAIL</label>
+          <input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpBlock">
+
+
+          <label for="inputSenha" class="form-label">SENHA</label>
+          <input type="password" id="inputSenha" class="form-control" aria-describedby="senhaHelpBlock">
+
+
+          <select class="form-select" aria-label="Default select example">
+            <option selected>Open this select menu</option>
+            <option value="1">One</option>
+            <option value="2">Two</option>
+            <option value="3">Three</option>
+          </select>
+
+          <button type="submit" class="btn btn-primary btn-lg">Large button</button>
+        </form>
       </div>
 
-    </div>
-  </div>
-</section>
 
-        <!-- SECTION CARDS-PLANOS -->
-
-        <section id="main__cards-planos" class="main__cards-planos">
-            <div class="card col-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card col-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-
-            <div class="card col-4" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
-                <div class="card-body">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the
-                        card’s content.</p>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                </div>
-            </div>
-        </section>
-
-        <!-- SECTION TREINOS -->
-
-        <section id="main__treinos" class="main__treinos">
-            <div class="main__treinos-cards container row"></div>
-            <div class="card text-bg-dark col-3 treinos-card">
-                <img src="https://images.pexels.com/photos/13885345/pexels-photo-13885345.jpeg?_gl=1*16xrlgu*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3MTMkajQ2JGwwJGgw"
-                    class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-
-            <div class="card text-bg-dark col-3 treinos-card">
-                <img src="https://images.pexels.com/photos/13947314/pexels-photo-13947314.jpeg?_gl=1*787zig*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NDQkajE1JGwwJGgw"
-                    class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-
-            <div class="card text-bg-dark col-3 treinos-card">
-                <img src="https://images.pexels.com/photos/13896897/pexels-photo-13896897.jpeg?_gl=1*1nqla91*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NzAkajUwJGwwJGgw"
-                    class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-
-            <div class="card text-bg-dark col-3 treinos-card">
-                <img src="https://images.pexels.com/photos/36400005/pexels-photo-36400005.jpeg?_gl=1*1jogapn*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE5MTUkajMwJGwwJGgw"
-                    class="card-img" alt="...">
-                <div class="card-img-overlay">
-                    <h5 class="card-title">Card title</h5>
-                    <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-                        additional content. This content is a little bit longer.</p>
-                    <p class="card-text"><small>Last updated 3 mins ago</small></p>
-                </div>
-            </div>
-            </div>
-        </section>
-
-        <section id="main__galeria" class="main__galeria my-5">
-            <div class="container text-center main__galeria-container">
-                <div class="row galeria-container__images">
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/29149075/pexels-photo-29149075.jpeg?_gl=1*hy5faw*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyMTgkajU2JGwwJGgw" class="rounded" alt="...">
-                        </div>
-                    </div>
-                    
-                    <div class="col-6">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/29149082/pexels-photo-29149082.jpeg?_gl=1*1w68tsm*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyNDIkajMyJGwwJGgw" class="rounded" alt="...">
-                        </div>
-                    </div>
-                    
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg" class="rounded" alt="...">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row galeria-container__images">
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/4716817/pexels-photo-4716817.jpeg?_gl=1*slb12g*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjIyNzQkajYwJGwwJGgw" class="rounded" alt="...">
-                        </div>
-                    </div>
-
-                    <div class="col-5">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/13896071/pexels-photo-13896071.jpeg" class="rounded" alt="...">
-                        </div>
-                    </div>
-
-                    <div class="col">
-                        <div class="text-center">
-                            <img src="https://images.pexels.com/photos/13885344/pexels-photo-13885344.jpeg" class="rounded" alt="...">
-                        </div>
-                    </div>
-                    
-                </div>
-            </div>
-        </section>
-
-        <section id="main__matricula" class="main__matricula">
-
-        </section>
+    </section>
 
 
 
-    </main>
-    <footer>
-        <section class="footer__logo"></section>
+  </main>
+  <footer>
+    <section class="footer__logo"></section>
 
-        <section class="footer__social"></section>
+    <section class="footer__social"></section>
 
-        <section class="footer__fast"></section>
+    <section class="footer__fast"></section>
 
-        <section class="footer__credenciais"></section>
+    <section class="footer__credenciais"></section>
 
-    </footer>
+  </footer>
 
 
 
 
 
-    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
-        crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+    crossorigin="anonymous"></script>
 </body>
 
 </html>

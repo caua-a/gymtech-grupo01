@@ -1,17 +1,18 @@
 /*RESET */
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: ;
 }
 
 /*VARIABLES */
 
-:root{
+:root {
 
     /* CORES */
-    --color-primary: #901E3E;
+    --color-primary: rgb(220, 64, 74);
     --color-primary-hover: #6d1630;
 
     --color-secondary: #1f1f1f;
@@ -38,7 +39,7 @@
 
 /*BODY */
 
-body{
+body {
     font-family: "Poppins", sans-serif;
     background-color: var(--color-primary);
     color: var(--text-main);
@@ -47,7 +48,7 @@ body{
 
 /*HEADER */
 
-.header__nav{
+.header__nav {
     background-color: rgba(47, 45, 46, 0.95) !important;
     backdrop-filter: blur(10px);
 
@@ -57,22 +58,23 @@ body{
     width: 100%;
     z-index: 999;
 }
-.header__nav img{
+
+.header__nav img {
     width: 200px;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: var(--text-light);
     font-size: 2rem;
     font-weight: 700;
     letter-spacing: 2px;
 }
 
-.navbar-nav{
+.navbar-nav {
     gap: 20px;
 }
 
-.nav-link{
+.nav-link {
     color: var(--text-light) !important;
     font-weight: 500;
     transition: var(--transition);
@@ -82,8 +84,8 @@ body{
 
 
 
-.nav-link:hover{
-    color: var(--color-primary) ;
+.nav-link:hover {
+    color: var(--color-primary);
 }
 
 /* HERO */
@@ -92,11 +94,13 @@ body{
     width: 100%;
     height: 100vh;
 
-    background: black;
-
+    background-image:
+        linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.65)),
+        url("../img/gym-bg.jpg");
 
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
 
     display: flex;
     justify-content: center;
@@ -107,34 +111,37 @@ body{
     flex-direction: column;
 }
 
-.main__hero content a{
-    background-color: #901E3E;
+.main__hero .main__content a {
     text-decoration: none;
     color: white;
-    width: 10%;
-    height: 5%;
+    width: 200px;
+    height: 50px;
+
     display: flex;
     align-items: center;
     justify-content: center;
+
     font-size: 1.3rem;
     border-radius: 10px;
+
+    background-color: #901E3E;
 }
 
 
 /* CAROUSEL */
 
-.main__carrosel{
+.main__carrosel {
     padding: 100px 80px;
     background-color: var(--color-secondary);
 }
 
-.carousel{
+.carousel {
     border-radius: 25px;
     overflow: hidden;
     box-shadow: var(--shadow-hover);
 }
 
-.carousel-item img{
+.carousel-item img {
     height: 700px;
     object-fit: cover;
     filter: brightness(75%);
@@ -142,7 +149,7 @@ body{
 
 /* LOCAL */
 
-.main__loc{
+.main__loc {
     padding: 120px 80px;
 
     display: flex;
@@ -152,7 +159,7 @@ body{
     background-color: var(--color-light);
 }
 
-.main__loc .card{
+.main__loc .card {
     width: 100%;
     max-width: 1100px;
 
@@ -166,21 +173,21 @@ body{
     transition: var(--transition);
 }
 
-.main__loc .card:hover{
+.main__loc .card:hover {
     transform: translateY(-10px);
     box-shadow: var(--shadow-hover);
 }
 
-.main__loc img{
+.main__loc img {
     height: 100%;
     object-fit: cover;
 }
 
-.card-body{
+.card-body {
     padding: 40px;
 }
 
-.card-title{
+.card-title {
     color: var(--color-primary);
     font-size: 2rem;
     font-weight: 700;
@@ -188,27 +195,27 @@ body{
     margin-bottom: 20px;
 }
 
-.card-text{
+.card-text {
     color: var(--text-muted);
     line-height: 1.8;
 }
 
 /* PLANOS */
 
-.main__cards-planos{
+.main__cards-planos {
     padding: 120px 80px;
 
     background:
-    linear-gradient(to bottom,
-    var(--color-secondary),
-    #1f1d1e);
+        linear-gradient(to bottom,
+            var(--color-secondary),
+            #1f1d1e);
 
     display: flex;
     justify-content: center;
     gap: 40px;
 }
 
-.main__cards-planos .card{
+.main__cards-planos .card {
     border: none;
     border-radius: 30px;
 
@@ -221,25 +228,25 @@ body{
     box-shadow: var(--shadow-main);
 }
 
-.main__cards-planos .card:hover{
+.main__cards-planos .card:hover {
     transform: translateY(-15px) scale(1.02);
     box-shadow: var(--shadow-hover);
 }
 
-.main__cards-planos img{
+.main__cards-planos img {
     height: 260px;
     object-fit: cover;
 }
 
-.main__cards-planos .card-body{
+.main__cards-planos .card-body {
     padding: 35px;
 }
 
-.main__cards-planos .card-title{
+.main__cards-planos .card-title {
     font-size: 1.7rem;
 }
 
-.main__cards-planos .btn{
+.main__cards-planos .btn {
     width: 100%;
 
     padding: 14px;
@@ -254,61 +261,199 @@ body{
     transition: var(--transition);
 }
 
-.main__cards-planos .btn:hover{
+.main__cards-planos .btn:hover {
     background-color: var(--color-primary-hover);
     transform: scale(1.03);
 }
 
+
 /* TREINOS */
 
-.main__treinos{
-    height: 500px;
-
-    background:
-    linear-gradient(rgba(0,0,0,.7),
-    rgba(0,0,0,.7)),
-    url("https://images.pexels.com/photos/949126/pexels-photo-949126.jpeg");
-
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    padding: 0 20px;
+.main__treinos {
+    width: 100%;
+    min-height: 100vh;
+    background: #111827;
+    padding: 60px 40px;
 }
+
+
+.main__treinos-cards {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+
+.treinos-card {
+    position: relative;
+    width: 280px;
+    height: 400px;
+    border: none;
+    overflow: hidden;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: transform 0.4s ease,
+                box-shadow 0.4s ease;
+    background: #000;
+    padding: 0;
+}
+
+.treinos-card .card-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.5s ease;
+}
+
+
+
+
+.treinos-card .card-img-overlay {
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        to top,
+        rgba(0, 0, 0, 0.9),
+        rgba(0, 0, 0, 0.2)
+    );
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 25px;
+    color: #fff;
+}
+
+/* Título */
+.treinos-card .card-title {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Texto */
+.treinos-card .card-text {
+    font-size: 14px;
+    line-height: 1.5;
+    color: #e5e7eb;
+    margin-bottom: 10px;
+}
+
+
 
 /* GALERIA */
 
-.main__galeria{
+.main__galeria {
     padding: 120px 80px;
     background-color: var(--color-light);
 }
 
 /* MATRÍCULA */
-
-.main__matricula{
-    height: 400px;
-
-    background:
-    linear-gradient(135deg,
-    var(--color-primary),
-    #5a1025);
-
-    display: flex;
-    justify-content: center;
-    align-items: center;
-
-    text-align: center;
-
-    padding: 0 20px;
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
+/* Seção principal */
+.main__matricula {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: center;
+    background: #f4f6f9;
+    padding: 40px;
+    gap: 40px;
+}
+
+/* Imagem */
+.main__matricula-image {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__matricula-image img {
+    width: 100%;
+    max-width: 550px;
+    border-radius: 20px;
+    object-fit: cover;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Formulário */
+.main__matricula-form {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main__matricula-form form {
+    width: 100%;
+    max-width: 450px;
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+}
+
+/* Labels */
+.main__matricula-form .form-label {
+    font-size: 14px;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 8px;
+    display: block;
+}
+
+/* Inputs */
+.main__matricula-form .form-control,
+.main__matricula-form .form-select {
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 20px;
+    border: 1px solid #dcdcdc;
+    border-radius: 10px;
+    font-size: 15px;
+    transition: 0.3s ease;
+}
+
+/* Focus */
+.main__matricula-form .form-control:focus,
+.main__matricula-form .form-select:focus {
+    border-color: #0d6efd;
+    outline: none;
+    box-shadow: 0 0 8px rgba(13, 110, 253, 0.3);
+}
+
+/* Botão */
+.main__matricula-form .btn {
+    width: 100%;
+    padding: 14px;
+    border: none;
+    border-radius: 10px;
+    background: #0d6efd;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.main__matricula-form .btn:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+}
+
 
 /* FOOTER */
 
-footer{
+footer {
     background-color: #1d1b1c;
 
     padding: 80px 50px;
@@ -319,27 +464,28 @@ footer{
     gap: 40px;
 }
 
-footer section{
+footer section {
     min-width: 200px;
     color: var(--text-light);
 }
 
 
 
-.main__galeria-container{
+.main__galeria-container {
 
     display: flex;
     flex-wrap: wrap;
     gap: 50px;
-    
+
 }
 
-.galeria-container__images{
+.galeria-container__images {
     display: flex;
     align-items: center;
-    
+
 }
-.text-center img{
+
+.text-center img {
     width: 100%;
     justify-self: center;
     align-self: center;
@@ -347,7 +493,7 @@ footer section{
     box-shadow: transparent 1px 1px 20px;
 }
 
-.text-center img:hover{
+.text-center img:hover {
     box-shadow: var(--color-primary) 1px 1px 20px;
     cursor: pointer;
 }

@@ -10,3 +10,7 @@ footer__logo
 footer__social-media
 footer__fast-travel
 footer__credenciais
+
+
+
+https://github.com/caua-a/gymtech-grupo01.git
