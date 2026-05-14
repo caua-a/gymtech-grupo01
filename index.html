@@ -14,6 +14,9 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+
+  <script src="./assets/js/script.js" defer></script>
   <title>GymTech</title>
 </head>
 
@@ -32,10 +35,10 @@
               <a class="nav-link active" aria-current="page" href="#">Início</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Treinos</a>
+              <a class="nav-link" href="#main__treinos">Treinos</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Localização</a>
+              <a class="nav-link" href="#main__loc">Localização</a>
             </li>
             <li class="nav-item">
               <a class="nav-link disabled" aria-disabled="true">Disabled</a>
@@ -190,7 +193,7 @@
             <div class="card border-0 shadow-sm h-100 location-card">
 
               <div class="position-relative">
-                <img src="https://images.pexels.com/photos/6046978/pexels-photo-6046978.png" class="card-img-top"
+                <img src="https://images.pexels.com/photos/7031705/pexels-photo-7031705.jpeg" class="card-img-top"
                   alt="Unidade">
                 <span class="badge bg-danger position-absolute top-0 start-0 m-2">Aberto</span>
               </div>
@@ -220,46 +223,54 @@
     <section id="main__cards-planos" class="main__cards-planos">
 
       <div class="card col-4" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="Plano Basic">
+        <img src="https://images.pexels.com/photos/4944973/pexels-photo-4944973.jpeg" class="card-img-top"
+          alt="Plano Basic">
         <div class="card-body">
-          <h5 class="card-title">Basic</h5>
-          <p class="card-text">
-            Ideal para quem quer começar.<br>
-            ✔ Musculação liberada<br>
-            ✔ Acesso à sala de treino<br>
-            ✔ Suporte básico da equipe
-          </p>
-          <p class="fw-bold">R$ 99,90 / mês</p>
+          <div class="planos-content">
+            <h5 class="card-title">Basic</h5>
+            <p class="card-text">
+              Ideal para quem quer começar.<br>
+              ✔ Musculação liberada<br>
+              ✔ Acesso à sala de treino<br>
+              ✔ Suporte básico da equipe
+            </p>
+            <p class="fw-bold">R$ 99,90 / mês</p>
+          </div>
           <a href="#" class="btn btn-primary">Assinar plano</a>
         </div>
       </div>
 
       <div class="card col-4" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="Plano Premium">
+        <img src="https://images.pexels.com/photos/13588102/pexels-photo-13588102.jpeg" class="card-img-top"
+          alt="Plano Premium">
         <div class="card-body">
-          <h5 class="card-title">Premium</h5>
-          <p class="card-text">
-            Para quem busca evolução completa.<br>
-            ✔ Musculação + aulas coletivas<br>
-            ✔ Todas as modalidades liberadas<br>
-            ✔ Acesso completo à academia
-          </p>
-          <p class="fw-bold">R$ 129,90 / mês</p>
+          <div class="planos-content" <h5 class="card-title">Premium</h5>
+            <p class="card-text">
+              Para quem busca evolução completa.<br>
+              ✔ Musculação + aulas coletivas<br>
+              ✔ Todas as modalidades liberadas<br>
+              ✔ Acesso completo à academia
+            </p>
+            <p class="fw-bold">R$ 129,90 / mês</p>
+          </div>
           <a href="#" class="btn btn-primary">Assinar plano</a>
         </div>
       </div>
 
       <div class="card col-4" style="width: 18rem;">
-        <img src="" class="card-img-top" alt="Plano VIP">
+        <img src="https://images.pexels.com/photos/35540077/pexels-photo-35540077.jpeg" class="card-img-top"
+          alt="Plano VIP">
         <div class="card-body">
-          <h5 class="card-title">VIP</h5>
-          <p class="card-text">
-            Experiência completa e personalizada.<br>
-            ✔ Personal trainer incluso<br>
-            ✔ Treino individualizado<br>
-            ✔ Acesso total + prioridade nos serviços
-          </p>
-          <p class="fw-bold">R$ 159,90 / mês</p>
+          <div class="planos-content">
+            <h5 class="card-title">VIP</h5>
+            <p class="card-text">
+              Experiência completa e personalizada.<br>
+              ✔ Personal trainer incluso<br>
+              ✔ Treino individualizado<br>
+              ✔ Acesso total + prioridade nos serviços
+            </p>
+            <p class="fw-bold">R$ 159,90 / mês</p>
+          </div>
           <a href="#" class="btn btn-primary">Assinar plano</a>
         </div>
       </div>
@@ -267,61 +278,66 @@
     </section>
 
     <!-- SECTION TREINOS -->
-    <section id="main__treinos" class="main__treinos">
-      <h1>O TREINO QUE VOCÊ PRECISA, <span>AQUI TEM!</span></h1>
-      <div class="main__treinos-cards container row">
-        <div class="card text-bg-dark col-3 treinos-card">
-          <img
-            src="https://images.pexels.com/photos/13885345/pexels-photo-13885345.jpeg?_gl=1*16xrlgu*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3MTMkajQ2JGwwJGgw"
-            class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+    <!-- SECTION TREINOS -->
+<section id="main__treinos" class="main__treinos">
+  <h1 class="fs-1">O TREINO QUE VOCÊ PRECISA, <span>AQUI TEM!</span></h1>
 
-        <div class="card text-bg-dark col-3 treinos-card">
-          <img
-            src="https://images.pexels.com/photos/13947314/pexels-photo-13947314.jpeg?_gl=1*787zig*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NDQkajE1JGwwJGgw"
-            class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+  <div class="main__treinos-cards container row">
 
-        <div class="card text-bg-dark col-3 treinos-card">
-          <img
-            src="https://images.pexels.com/photos/13896897/pexels-photo-13896897.jpeg?_gl=1*1nqla91*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE3NzAkajUwJGwwJGgw"
-            class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
-
-        <div class="card text-bg-dark col-3 treinos-card">
-          <img
-            src="https://images.pexels.com/photos/36400005/pexels-photo-36400005.jpeg?_gl=1*1jogapn*_ga*NTQ0Nzg2OTU0LjE3Nzg3NjE3MDA.*_ga_8JE65Q40S6*czE3Nzg3NjE2OTkkbzEkZzEkdDE3Nzg3NjE5MTUkajMwJGwwJGgw"
-            class="card-img" alt="...">
-          <div class="card-img-overlay">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to
-              additional content. This content is a little bit longer.</p>
-            <p class="card-text"><small>Last updated 3 mins ago</small></p>
-          </div>
-        </div>
+    <div class="card text-bg-dark col-3 treinos-card">
+      <img src="https://images.pexels.com/photos/13885345/pexels-photo-13885345.jpeg" class="card-img" alt="Musculação">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Musculação Completa</h5>
+        <p class="card-text">
+          • Musculação completa<br>
+          • Treinamento funcional<br>
+          • Avaliação física
+        </p>
+        <p class="card-text"><small>Treinos focados em força e evolução</small></p>
       </div>
+    </div>
 
+    <div class="card text-bg-dark col-3 treinos-card">
+      <img src="https://images.pexels.com/photos/13947314/pexels-photo-13947314.jpeg" class="card-img" alt="Funcional">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Treino Funcional</h5>
+        <p class="card-text">
+          • Treinamento funcional<br>
+          • Cardio e emagrecimento<br>
+          • Treinos personalizados
+        </p>
+        <p class="card-text"><small>Movimento, energia e desempenho</small></p>
+      </div>
+    </div>
 
-    </section>
+    <div class="card text-bg-dark col-3 treinos-card">
+      <img src="https://images.pexels.com/photos/13896897/pexels-photo-13896897.jpeg" class="card-img" alt="Cardio">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Cardio & Saúde</h5>
+        <p class="card-text">
+          • Cardio e emagrecimento<br>
+          • Ambiente climatizado e moderno<br>
+          • Suporte da equipe
+        </p>
+        <p class="card-text"><small>Foco em saúde e condicionamento</small></p>
+      </div>
+    </div>
 
+    <div class="card text-bg-dark col-3 treinos-card">
+      <img src="https://images.pexels.com/photos/36400005/pexels-photo-36400005.jpeg" class="card-img" alt="Aulas">
+      <div class="card-img-overlay">
+        <h5 class="card-title">Aulas Coletivas</h5>
+        <p class="card-text">
+          • Aulas coletivas<br>
+          • Tech-Dance com professores profissionais<br>
+          • Personal trainers qualificados
+        </p>
+        <p class="card-text"><small>Energia em grupo e motivação total</small></p>
+      </div>
+    </div>
+
+  </div>
+</section>
 
     <!-- SECTION GALERIA -->
     <section id="main__galeria" class="main__galeria my-5">
@@ -375,54 +391,143 @@
       </div>
     </section>
 
+
+    <!-- MATRICULA -->
     <section id="main__matricula" class="main__matricula row">
-      <div class="main__matricula-image col-4">
-        <img src="https://images.pexels.com/photos/34791440/pexels-photo-34791440.jpeg" alt="">
-      </div>
+  <div class="main__matricula-image col-4">
+    <img src="https://images.pexels.com/photos/34791440/pexels-photo-34791440.jpeg" alt="">
+  </div>
 
-      <div class="main__matricula-form col-8">
-        <form action="">
-          <label for="inputNome" class="form-label">Nome</label>
-          <input type="text" id="inputNome" class="form-control" aria-describedby="nomeHelpBlock">
-
-
-          <label for="inputCPF" class="form-label">CPF</label>
-          <input type="number" id="inputCPF" class="form-control" aria-describedby="cpfHelpBlock">
+  <div class="main__matricula-form col-8">
+    <form action="">
+      <label for="inputNome" class="form-label">Nome</label>
+      <input type="text" id="inputNome" class="form-control" aria-describedby="nomeHelpBlock">
 
 
-          <label for="inputEmail" class="form-label">EMAIL</label>
-          <input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpBlock">
+      <label for="inputCPF" class="form-label">CPF</label>
+      <input type="text" id="inputCPF" class="form-control" aria-describedby="cpfHelpBlock" maxlength="11" inputmode="numeric" pattern="[0-9]*">
 
 
-          <label for="inputSenha" class="form-label">SENHA</label>
-          <input type="password" id="inputSenha" class="form-control" aria-describedby="senhaHelpBlock">
+      <label for="inputEmail" class="form-label">E-mail</label>
+      <input type="text" id="inputEmail" class="form-control" aria-describedby="emailHelpBlock">
 
 
-          <select class="form-select" aria-label="Default select example">
-            <option selected>Open this select menu</option>
-            <option value="1">One</option>
-            <option value="2">Two</option>
-            <option value="3">Three</option>
-          </select>
-
-          <button type="submit" class="btn btn-primary btn-lg">Large button</button>
-        </form>
-      </div>
+      <label for="inputSenha" class="form-label">Senha</label>
+      <input type="password" id="inputSenha" class="form-control" aria-describedby="senhaHelpBlock">
 
 
-    </section>
+      <select class="form-select" aria-label="Selecionar plano">
+        <option selected>Selecione um plano</option>
+        <option value="1">Básico</option>
+        <option value="2">Premium</option>
+        <option value="3">VIP</option>
+      </select>
 
+      <button type="button" id="alertSucesso" class="btn btn-danger btn-lg">Finalizar matrícula</button>
+    </form>
+  </div>
+
+</section>
 
 
   </main>
   <footer>
-    <section class="footer__logo"></section>
 
-    <section class="footer__social"></section>
+     <!-- LOGO -->
+  <section class="footer__logo">
+    <a class="footer-logo" href="#">
+      <img src="assets/img/logo.png" alt="Logo GymTech ">
+    </a>
+  </section>
 
-    <section class="footer__fast"></section>
+  <!-- REDES SOCIAIS -->
+  <section class="footer__social">
 
-    <section class="footer__credenciais"></section>
+    <h3>Siga a GymTech</h3>
+
+    <div class="social-icons">
+
+      <a href="#">
+        <i class="fa-brands fa-facebook-f"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-instagram"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-youtube"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-tiktok"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-spotify"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-twitter"></i>
+      </a>
+
+      <a href="#">
+        <i class="fa-brands fa-whatsapp"></i>
+      </a>
+
+    </div>
+
+  </section>
+
+    <!-- LINKS RÁPIDOS -->
+    <section class="footer__fast">
+
+      <div class="footer-column">
+
+        <h2>Institucional</h2>
+
+        <a href="#">Sobre</a>
+        <a href="#">Conceito</a>
+        <a href="#">Investidores</a>
+        <a href="#">Central de Ajuda</a>
+        <a href="#">Fale Conosco</a>
+        <a href="#">Edital GymTech</a>
+        <a href="#">Aviso de Privacidade</a>
+        <a href="#">Portal de privacidade</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h2>Planos</h2>
+
+        <a href="#main__cards-planos">Planos</a>
+        <a href="#main__treinos">Treinos</a>
+
+      </div>
+
+      <div class="footer-column">
+
+        <h2>Corporativo</h2>
+
+        <a href="#">Imprensa</a>
+        <a href="#">Quero ser um franqueado</a>
+        <a href="#">Divulgue sua marca</a>
+        <a href="#">Indique um ponto</a>
+        <a href="#">Trabalhe conosco</a>
+
+      </div>
+
+    </section>
+
+    <!-- CREDENCIAIS -->
+    <section class="footer__credenciais">
+
+      <p>
+        GYMTECH CENTRO DE TREINAMENTO S.A
+      </p>
+
+    </section>
 
   </footer>
 
