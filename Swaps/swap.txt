@@ -59,3 +59,39 @@ Complementar: #454040
     <span class="visually-hidden">Next</span>
   </button>
 </div>
+
+
+
+-------------------------------------------- // --------------------------------------------------
+Galeria imagens
+<div class="container row">
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+            </div>
+            <div class="container row">
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+
+                <div class="text-center col-4">
+                    <img src="..." class="rounded" alt="...">
+                </div>
+            </div>
+
+
+Referências:
+
+https://www.panobiancoacademia.com.br/promo-orange?gad_source=1&gad_campaignid=23805753495&gbraid=0AAAAABQ-EBBvweAGiYQmChqXUliEf8uy9&gclid=CjwKCAjw5ZXQBhBdEiwAI5XVWX4aAbRb7MPthWvXTQzFUJbEzf-LdAmktgmHw6XJyRP-hEUwg1k0WRoC90wQAvD_BwE
