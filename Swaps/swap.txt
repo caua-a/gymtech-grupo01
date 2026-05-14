@@ -1,0 +1,61 @@
+Colors:
+Principal complementar: #6E1A37
+Principal: #901E3E
+Secundária: #2F2D2E
+Terceira: #605B51
+Complementar: #454040
+
+
+--- Variaveis
+
+
+:root {
+  
+  /* Cor Destaque */
+  --color-primary: #901E3E;
+  --color-primary-hover: #731831; /* Tom um pouco mais escuro */
+
+  /* Cor de Fundo Escura  */
+  --color-secondary: #2F2D2E;
+
+  /* Cor de Apoio / Elementos Secundários */
+  --color-tertiary: #605B51;
+
+  /* Cor de Contraste Neutro */
+  --color-complementary: #454040;
+
+  /* Cores neutras */
+  --color-white: #FFFFFF;
+  --color-light-gray: #F8F9FA; /* Ótimo para o fundo principal da página */
+  
+  /* Cores de Texto */
+  --text-main: #2F2D2E;       /* Texto principal (usando a secundária de vocês para harmonia) */
+  --text-muted: #605B51;      /* Texto secundário/subtítulos (usando a terceira) */
+  --text-light: #FFFFFF;      /* Texto claro para usar sobre fundos escuros */
+}
+
+
+
+--- main__carrosel
+
+<div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>

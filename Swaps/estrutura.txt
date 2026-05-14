@@ -1,0 +1,12 @@
+header-nav <-- Dentro do header nav
+main__hero-section <-- 
+main__carrosel-section
+main__loc-section
+main__cards-planos 
+main__treinos-aulas
+main__galeria
+main__matricula
+footer__logo
+footer__social-media
+footer__fast-travel
+footer__credenciais
